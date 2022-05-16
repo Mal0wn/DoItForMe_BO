@@ -1,5 +1,5 @@
 import React from "react";
-import "./Signal.css"
+import style from "./Signal.module.css"
 import {users} from "../../db";
 import {
     Link
@@ -10,11 +10,11 @@ export const Signal = () => {
 
     if (signalement == true) {
         return(
-            <div className="signalInfos">
-                <div className="signalBy">
-                    <div className="left">
+            <div className={style.signalInfos}>
+                <div className={style.signalBy}>
+                    <div className={style.left}>
                         <p>Signalé par : { users.name[0]} </p>
-                        <img className="profilPictureSign" src={users.profilPicture[0]} alt="Photo profil"/>
+                        <img className={style.profilPictSign} src={users.profilPicture[0]} alt="Photo profil"/>
                         <Link to="/discussion"> Session Chat</Link>
                     </div>
 
@@ -24,7 +24,7 @@ export const Signal = () => {
         )
     }else {
         return (
-            <div className="noSignal">
+            <div className={style.noSignal}>
 
             </div>
         )
