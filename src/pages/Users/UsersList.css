@@ -1,0 +1,67 @@
+
+usersContainer {
+    display: flex;
+}
+ul {
+    list-style-type:none;
+}
+
+
+
+.imgUserList {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 60%;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.infoUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.pro-icon svg{
+    color: #7D1D3F;
+    font-size: 3em;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headTab {
+    color: #7D1D3F;
+    text-align: inherit;
+}
+.btnDetail {
+    background-color: #7D1D3F;
+    color: #efeaea;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    border-radius: 6px;
+    width: 80%;
+
+}
+.itemSignalUser {
+    width: 3em;
+    color : transparent;
+
+}
+.userSignalTrue {
+
+    color: #d37636;
+}
+.userSignalFalse {
+   color: transparent;
+}
+
+.itemSignalUser svg {
+    width: 3em;
+    height: 60%;
+
+}
