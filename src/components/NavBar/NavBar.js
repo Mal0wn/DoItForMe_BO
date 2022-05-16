@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './NavBar.css';
+import style from './NavBar.module.css';
 import {SearchBar} from "../SearchBar/SearchBar";
 import {useLocation} from "react-router-dom";
 
@@ -33,10 +33,10 @@ const NavBar = () => {
     })
 
     return (
-        <div id="navBar">
-            <nav className="navContain">
+        <div className={style.navBar}>
+            <nav className={style.navContain}>
                 <h2>{title}</h2>
-                <div className ="ContainSearch">
+                <div>
                     <SearchBar/>
                 </div>
             </nav>
