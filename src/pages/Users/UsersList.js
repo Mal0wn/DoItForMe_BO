@@ -1,6 +1,6 @@
 import React , {useState, useMemo} from  "react";
 import { FaSkull  } from "react-icons/fa";
-import './UsersList.css';
+import style from './UsersList.module.css';
 import { users} from "../../db.js";
 import {Rating} from "../../components/Rating/Rating";
 import NavBar from "../../components/NavBar/NavBar";
@@ -29,20 +29,20 @@ const ItemListUser = () => {
     }
 
     return (
-        <div className="usersContainer page">
+        <div className="page" className={style.usersContainer}>
             <NavBar/>
-            <div className="column">
-                <table className="containList">
+            <div className={style.column}>
+                <table className={style.containList}>
                     <thead>
                     <tr>
                         <th></th>
-                        <th className="headTab"></th>
-                        <th className="headTab">First Name</th>
-                        <th className="headTab">Last Name</th>
-                        <th className="headTab">Email</th>
-                        <th className="headTab">Phone</th>
-                        <th className="headTab">Rating</th>
-                        <th className="headTab"></th>
+                        <th className={style.headTab}></th>
+                        <th className={style.headTab}>First Name</th>
+                        <th className={style.headTab}>Last Name</th>
+                        <th className={style.headTab}>Email</th>
+                        <th className={style.headTab}>Phone</th>
+                        <th className={style.headTab}>Rating</th>
+                        <th className={style.headTab}></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -50,13 +50,13 @@ const ItemListUser = () => {
                         return (
                             <tr  key={item.id}>
                                 <td className={`itemSignalUser ${item.status === "signal"? 'userSignalTrue' : 'userSignalFalse'}`}><FaSkull/></td>
-                                <td> <img className="imgUserList" src={item.profilPicture}/></td>
+                                <td> <img className={style.imgUserList} src={item.profilPicture}/></td>
                                 <td>{item.firstName}</td>
                                 <td>{item.lastName}</td>
                                 <td>{item.mail}</td>
                                 <td>{item.phone}</td>
                                 <td><Rating star = {item.rate}/></td>
-                                <td className="btnDetail"><Link to="/userDetail/">Détails</Link></td>
+                                <td className={style.btnDetail}><Link to="/userDetail/">Détails</Link></td>
                             </tr>
                         );
                     })}
