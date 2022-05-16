@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar} from "react-icons/fa"
-import './Rating.css';
+import style from './Rating.module.css';
 
 export const Rating = ({star}) => {
 
@@ -9,51 +9,51 @@ export const Rating = ({star}) => {
             case 1 :
                 return (
                     <div>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="black"></FaStar>
-                        <FaStar className="black"></FaStar>
-                        <FaStar className="black"></FaStar>
-                        <FaStar className="black"></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.black}></FaStar>
+                        <FaStar className={style.black}></FaStar>
+                        <FaStar className={style.black}></FaStar>
+                        <FaStar className={style.black}></FaStar>
                     </div>
                 )
             case 2 :
                 return (
                     <div>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="black"></FaStar>
-                        <FaStar className="black"></FaStar>
-                        <FaStar className="black"></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.black}></FaStar>
+                        <FaStar className={style.black}></FaStar>
+                        <FaStar className={style.black}></FaStar>
                     </div>
                 )
             case 3 :
                 return (
                     <div>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="black"></FaStar>
-                        <FaStar className="black"></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.black}></FaStar>
+                        <FaStar className={style.black}></FaStar>
                     </div>
                 )
             case 4 :
                 return (
                     <div>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="black"></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.black}></FaStar>
                     </div>
                 )
             case 5 :
                 return (
                     <div>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
-                        <FaStar className="yellow"></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
+                        <FaStar className={style.yellow}></FaStar>
                     </div>
                 )
                 break;
