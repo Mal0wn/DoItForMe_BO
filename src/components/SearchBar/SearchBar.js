@@ -1,10 +1,10 @@
 import React from "react";
-import "./SearchBar.css";
+import style from "./SearchBar.module.css";
 import {FaSearch} from "react-icons/fa"
 
 export const SearchBar = () => {
     return (
-       <div className="containSearchBar">
+       <div className={style.containSearchBar}>
            <input type="search"/>
            <FaSearch/>
        </div>
